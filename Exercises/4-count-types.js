@@ -15,13 +15,9 @@ const countTypesInArray = (arr) => {
   const counters = {};
   for (const element of arr) {
     const type = typeof element;
-      counters[type]?
-      counters[type] += 1:
-      counters[type] = 1;
-
+    counters[type] ? counters[type] += 1 : counters[type] = 1;
   }
   return counters;
 };
 
-console.dir(countTypesInArray([1, 2, true, false, 'a', 'b']));
-//module.exports = { countTypesInArray };
+module.exports = { countTypesInArray };
