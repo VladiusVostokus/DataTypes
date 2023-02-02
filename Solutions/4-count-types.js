@@ -10,4 +10,5 @@ const countTypesInArray = (arr) => {
   return counters;
 };
 
-module.exports = { countTypesInArray };
+console.dir(countTypesInArray([1, 2, true, false, 'a', 'b']));
+//module.exports = { countTypesInArray };
